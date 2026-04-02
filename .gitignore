@@ -1,0 +1,17 @@
+result
+result-*
+
+
+secrets.nix
+*.key
+*.pem
+
+
+*.backup
+*.bak
+*.swp
+
+
+.direnv
+
+
