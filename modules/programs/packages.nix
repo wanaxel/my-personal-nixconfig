@@ -15,6 +15,7 @@
     qbittorrent
     git
     protonup-qt
+    libreoffice-qt-fresh
   ];
 
   programs = {
