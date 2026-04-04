@@ -15,15 +15,20 @@
       url = "github:caelestia-dots/shell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    silentSDDM = {
+       url = "github:uiriansan/SilentSDDM";
+       inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, cachyos-kernel, ... }:
+  outputs = { self, nixpkgs, home-manager, cachyos-kernel, silentSDDM,  ... }@inputs:
   let
     system = "x86_64-linux";
   in {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       inherit system;
-
+      specialArgs = {inherit inputs;};
       modules = [
         ./configuration.nix
 

@@ -16,6 +16,8 @@
     git
     protonup-qt
     libreoffice-qt-fresh
+    google-chrome
+    easyeffects
   ];
 
   programs = {

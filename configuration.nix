@@ -10,6 +10,7 @@
     ./modules/system/users.nix
     ./modules/system/filesystems.nix
     ./modules/system/boot.nix
+    ./modules/system/sddm.nix
 
     # Programs
     ./modules/programs/audio.nix
