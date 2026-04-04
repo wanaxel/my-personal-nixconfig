@@ -18,6 +18,7 @@
     libreoffice-qt-fresh
     google-chrome
     easyeffects
+    obs-studio
   ];
 
   programs = {
