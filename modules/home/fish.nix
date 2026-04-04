@@ -14,7 +14,7 @@
       gc = "git commit";
       gp = "git push";
       rebuild = "sudo nixos-rebuild switch --flake /etc/nixos#nixos";
-      update = "sudo nixos-rebuild switch --flake /etc/nixos#nixos --upgrade";
+      update = "sudo nix flake update --flake /etc/nixos && sudo nixos-rebuild switch --flake /etc/nixos#nixos";
     };
 
     # ==========================
