@@ -24,6 +24,7 @@
     unzip
     xdg-desktop-portal-gtk
     opentabletdriver
+    heroic
   ];
 
   programs = {
