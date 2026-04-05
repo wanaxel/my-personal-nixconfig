@@ -19,5 +19,6 @@
     # Desktop
     ./modules/desktop/gaming.nix
     ./modules/desktop/plasma.nix
+    ./modules/desktop/opentablet.nix
   ];
 }

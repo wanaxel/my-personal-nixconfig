@@ -19,6 +19,11 @@
     google-chrome
     easyeffects
     obs-studio
+    wget 
+    zenity
+    unzip
+    xdg-desktop-portal-gtk
+    opentabletdriver
   ];
 
   programs = {
