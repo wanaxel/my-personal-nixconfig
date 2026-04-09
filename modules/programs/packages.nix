@@ -25,6 +25,10 @@
     xdg-desktop-portal-gtk
     opentabletdriver
     heroic
+    osu-lazer-bin
+    vibrantlinux
+    protontricks
+    pcsx2
   ];
 
   programs = {
