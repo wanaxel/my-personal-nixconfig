@@ -3,5 +3,7 @@
 {
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.timeout = 10;
+  boot.loader.systemd-boot.configurationLimit = 10;
   boot.kernelModules = ["i2c-dev"];
 }
