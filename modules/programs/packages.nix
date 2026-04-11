@@ -31,6 +31,7 @@
     unrar
     nvme-cli
     openrgb
+    openrgb-with-all-plugins
   ];
 
   programs = {
