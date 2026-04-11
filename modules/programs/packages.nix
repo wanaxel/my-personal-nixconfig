@@ -26,9 +26,10 @@
     opentabletdriver
     heroic
     osu-lazer-bin
-    vibrantlinux
     protontricks
     pcsx2
+    unrar
+    nvme-cli
   ];
 
   programs = {
