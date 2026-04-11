@@ -30,8 +30,7 @@
     pcsx2
     unrar
     nvme-cli
-    coolercontrol.coolercontrol-gui
-    coolercontrol.coolercontrold
+    openrgb
   ];
 
   programs = {
