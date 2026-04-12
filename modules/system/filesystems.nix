@@ -12,6 +12,7 @@
       "nofail"
       "noatime"
       "nodiratime"
+      "erros=remount-ro"
       "x-systemd.automount"
       "x-systemd.device-timeout=10"
     ];
