@@ -32,6 +32,7 @@
     nvme-cli
     openrgb
     openrgb-with-all-plugins
+    mission-center
   ];
 
   programs = {
