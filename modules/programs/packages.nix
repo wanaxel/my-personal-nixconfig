@@ -33,6 +33,7 @@
     openrgb
     openrgb-with-all-plugins
     mission-center
+    steamcmd
   ];
 
   programs = {
