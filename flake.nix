@@ -4,8 +4,6 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-    cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel";
-
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -22,7 +20,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, cachyos-kernel, silentSDDM,  ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, silentSDDM,  ... }@inputs:
   let
     system = "x86_64-linux";
   in {
@@ -42,13 +40,6 @@
             users.axel = import ./home.nix;
           };
         }
-
-        # CachyOS Kernel
-        ({ pkgs, ... }: {
-          boot.kernelPackages =
-            pkgs.linuxPackagesFor
-              cachyos-kernel.packages.${pkgs.system}.linux-cachyos-latest-x86_64-v4;
-        })
       ];
     };
   };
