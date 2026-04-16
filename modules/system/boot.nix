@@ -11,5 +11,6 @@
   boot.kernelParams = [
   "nvme_core.default_ps_max_latency_us=0"
   "nvme_core.io_timeout=30"
+  "nvme.noacpi=1"
   ];
 }
