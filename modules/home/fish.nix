@@ -32,6 +32,9 @@
       # Editor
       set -gx EDITOR nvim
 
+      # Add opencode to PATH
+      fish_add_path /home/axel/.opencode/bin
+
       # Starship (optional)
       if type -q starship
         starship init fish | source
