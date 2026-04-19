@@ -34,6 +34,8 @@
     openrgb-with-all-plugins
     mission-center
     steamcmd
+    gamescope
+    parted
   ];
 
   programs = {
@@ -42,10 +44,16 @@
     nix-ld.enable = true;
   };
 
+  programs.gamescope = {
+  enable = true;
+  capSysNice = true;  
+};
+
   # ========================
   # Services
   # ========================
   services.printing.enable = true;
   services.flatpak.enable = true; 
   xdg.portal.enable = true;
+  programs.gamemode.enable = true;
 }
