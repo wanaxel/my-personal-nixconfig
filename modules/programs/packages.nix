@@ -36,6 +36,7 @@
     steamcmd
     gamescope
     parted
+    brave
   ];
 
   programs = {
