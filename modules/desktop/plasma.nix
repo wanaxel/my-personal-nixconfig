@@ -1,5 +1,4 @@
 { config, pkgs, ... }:
-
 {
   services.xserver = {
     enable = true;
@@ -13,11 +12,11 @@
 
   services.desktopManager.plasma6.enable = true;
   systemd.user.services.easyeffects = {
-  description = "EasyEffects";
-  wantedBy = [ "default.target" ];
-  serviceConfig = {
-    ExecStart = "${pkgs.easyeffects}/bin/easyeffects --gapplication-service";
-    Restart = "on-failure";
+    description = "EasyEffects";
+    wantedBy = [ "default.target" ];
+    serviceConfig = {
+      ExecStart = "${pkgs.easyeffects}/bin/easyeffects --gapplication-service";
+      Restart = "on-failure";
+    };
   };
-};
 }

@@ -1,67 +1,79 @@
 { config, pkgs, ... }:
-
 {
   environment.systemPackages = with pkgs; [
+    # Communication
     discord
+    
+    # Gaming
     steam
-    vulkan-tools
-    mesa
-    flatpak
-    neovim
-    mpv
-    wineWow64Packages.staging 
+    lutris
+    heroic
+    protontricks
+    protonup-qt
+    wineWow64Packages.staging
     winetricks
+    gamescope
+    steamcmd
+    steam-run
+    
+    # Emulation
+    pcsx2
+    osu-lazer-bin
+    
+    
+    # Development
+    git
+    neovim
+    nodejs
+    python3
+    
+    # Media
+    mpv
+    obs-studio
+    easyeffects
+    
+    # Tools
+    flatpak
     lutris
     qbittorrent
-    git
-    protonup-qt
-    libreoffice-qt-fresh
-    google-chrome
-    easyeffects
-    obs-studio
-    wget 
-    zenity
+    wget
     unzip
-    xdg-desktop-portal-gtk
-    opentabletdriver
-    heroic
-    osu-lazer-bin
-    protontricks
-    pcsx2
     unrar
-    nvme-cli
+    parted
     openrgb
     openrgb-with-all-plugins
     mission-center
-    steamcmd
-    gamescope
-    parted
     brave
-    iputils 
-    procps 
+    google-chrome
+    libreoffice-qt-fresh
+    
+    # System
+    vulkan-tools
+    mesa
+    nvme-cli
+    iputils
+    procps
     shared-mime-info
     desktop-file-utils
-    freetype 
+    freetype
     vulkan-loader
-    steam-run
+    xdg-desktop-portal-gtk
+    opentabletdriver
   ];
 
   programs = {
     firefox.enable = true;
     fish.enable = true;
     nix-ld.enable = true;
+    gamemode.enable = true;
   };
 
   programs.gamescope = {
-  enable = true;
-  capSysNice = true;  
-};
+    enable = true;
+    capSysNice = true;
+  };
 
-  # ========================
-  # Services
-  # ========================
   services.printing.enable = true;
-  services.flatpak.enable = true; 
+  services.flatpak.enable = true;
   xdg.portal.enable = true;
-  programs.gamemode.enable = true;
 }
