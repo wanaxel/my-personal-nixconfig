@@ -11,6 +11,7 @@
     ./modules/system/filesystems.nix
     ./modules/system/boot.nix
     ./modules/system/sddm.nix
+    ./modules/system/virtualization.nix
 
     # Programs
     ./modules/programs/audio.nix

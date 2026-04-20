@@ -46,6 +46,7 @@
     brave
     google-chrome
     libreoffice-qt-fresh
+    tor-browser
     
     # System
     vulkan-tools
@@ -59,6 +60,8 @@
     vulkan-loader
     xdg-desktop-portal-gtk
     opentabletdriver
+    virt-manager
+    virt-viewer
   ];
 
   programs = {

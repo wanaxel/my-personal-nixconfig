@@ -1,4 +1,5 @@
 { config, pkgs, ... }:
+
 {
   fileSystems."/mnt/games" = {
     device = "/dev/disk/by-label/games";
