@@ -37,6 +37,10 @@
     gamescope
     parted
     brave
+    iputils 
+    procps 
+    shared-mime-info
+    desktop-file-utils
   ];
 
   programs = {
