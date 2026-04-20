@@ -41,6 +41,9 @@
     procps 
     shared-mime-info
     desktop-file-utils
+    freetype 
+    vulkan-loader
+    steam-run
   ];
 
   programs = {
