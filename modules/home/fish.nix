@@ -10,6 +10,7 @@
       gp = "git push";
       rebuild = "sudo nixos-rebuild switch --flake /etc/nixos#nixos";
       update = "sudo nix flake update --flake /etc/nixos && sudo nixos-rebuild switch --flake /etc/nixos#nixos";
+      freenix = "sudo nix-collect-garbage -d && sudo nix-store --optimise";
     };
 
     interactiveShellInit = ''
