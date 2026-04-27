@@ -32,6 +32,7 @@
     mpv
     obs-studio
     easyeffects
+    strawberry
     
     # Tools
     flatpak
