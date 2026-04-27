@@ -26,7 +26,8 @@
     neovim
     nodejs
     python3
-    
+    icu.dev 
+
     # Media
     mpv
     obs-studio
@@ -48,6 +49,7 @@
     libreoffice-qt-fresh
     tor-browser
     
+    
     # System
     vulkan-tools
     mesa
@@ -62,6 +64,7 @@
     opentabletdriver
     virt-manager
     virt-viewer
+    appimage-run
   ];
 
   programs = {
