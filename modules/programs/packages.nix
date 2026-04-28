@@ -6,7 +6,6 @@
     
     # Gaming
     steam
-    lutris
     heroic
     protontricks
     protonup-qt
@@ -38,7 +37,6 @@
  
     # Tools
     flatpak
-    lutris
     qbittorrent
     wget
     unzip
