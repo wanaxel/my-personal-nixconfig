@@ -15,6 +15,7 @@
     gamescope
     steamcmd
     steam-run
+    artix-games-launcher
     
     # Emulation
     pcsx2
@@ -33,7 +34,8 @@
     obs-studio
     easyeffects
     strawberry
-    
+    zoom-us
+ 
     # Tools
     flatpak
     lutris
